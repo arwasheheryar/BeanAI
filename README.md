@@ -6,21 +6,20 @@ Hybrid AI Approaches to Predicting Complex Traits in Plant Breeding
 Handling Large Heterogeneous Dataset
 ### Step 1: Run the Data Inventory Script
 ```bash
-# Navigate to your project directory
-cd /path/to/your/project
+# Navigate to project directory
 
-# Run the inventory on ALL your dry bean data
+# Run the inventory on ALL dry bean data
 python explore_data_inventory.py \
     --data_dir /path/to/all/drybean/files \
     --output_dir ./data_inventory_results
 ```
 
 **What this does:**
-- 🔍 Scans every Excel, CSV, and text file recursively
-- 📊 Analyzes structure (headers, columns, sheets)
-- 🏷️ Groups files by format patterns
-- 📈 Generates statistics and visualizations
-- 💡 Gives you actionable recommendations
+- Scans every Excel, CSV, and text file recursively
+- Analyzes structure (headers, columns, sheets)
+- Groups files by format patterns
+- Generates statistics and visualizations
+- Gives you actionable recommendations
 
 - **Time:** 5-30 minutes depending on number of files
   
@@ -32,7 +31,7 @@ python explore_data_inventory.py \
 ### Decision Tree
 
 A lot of variation: 
-1. Focus on **top 3 most common patterns** (usually covers 60-80% of data)
+1. Focus on **top 3 most common patterns** (which can covers 60-80% of data)
 2. Build specialized parser for each pattern 
 3. Process those files first, get 80% of your data unified
 4. Tackle remaining patterns iteratively
