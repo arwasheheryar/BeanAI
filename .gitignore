@@ -4,3 +4,22 @@ data/
 # ignore zip archives
 *.zip
 
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+# Results (large files)
+results/inventory/*.html
+results/inventory/*.json
+results/*.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# System
+.DS_Store
